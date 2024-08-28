@@ -1,0 +1,280 @@
+/* Estilos Gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #F4A261 0%, #8A4F24 100%); /* Gradiente sofisticado */
+    color: #333; /* Cor do texto principal */
+    padding: 20px;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #8A4F24; /* Marrom escuro */
+    color: #FFFFFF; /* Branco */
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    max-height: 50px; /* Tamanho máximo para a logo */
+    margin-right: 10px;
+}
+
+.site-title {
+    color: #F4A261; /* Laranja suave */
+    font-size: 24px; /* Aumentando o tamanho da fonte */
+    font-weight: bold; /* Negrito para mais destaque */
+}
+
+/* Navegação */
+.navigation .menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation .menu li {
+    margin: 0;
+}
+
+.navigation .menu a {
+    color: #FFFFFF; /* Branco */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Transição suave para o hover */
+    border-bottom: 2px solid transparent; /* Borda inferior transparente para efeito de hover */
+}
+
+.navigation .menu a:hover {
+    color: #F4A261; /* Laranja suave ao passar o mouse */
+    border-bottom: 2px solid #F4A261; /* Adiciona uma borda inferior ao passar o mouse */
+}
+
+/* Conteúdo Principal */
+.content {
+    display: flex;
+    flex-wrap: wrap; /* Para responsividade */
+    margin: 20px auto; /* Centraliza o conteúdo */
+    max-width: 1200px; /* Largura máxima para limitar o tamanho em telas grandes */
+    padding: 0 15px; /* Espaçamento interno nas laterais */
+}
+
+/* Barra Lateral */
+.sidebar {
+    flex: 1;
+    margin-right: 20px;
+    min-width: 250px; /* Largura mínima para responsividade */
+}
+
+.widget {
+    background-color: #FFFFFF; /* Branco para widgets */
+    color: #333; /* Cor do texto */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.widget h2 {
+    color: #8A4F24; /* Marrom escuro para títulos */
+    font-size: 22px; /* Tamanho do texto do título */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    font-weight: bold; /* Negrito para mais destaque */
+}
+
+.widget ul {
+    list-style: none; /* Remove marcadores padrão */
+    padding: 0;
+    margin: 0;
+}
+
+.widget ul li {
+    margin-bottom: 10px; /* Espaçamento entre itens */
+}
+
+.widget ul li a {
+    color: #8A4F24; /* Marrom escuro para links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-size: 16px; /* Tamanho da fonte dos links */
+    transition: color 0.3s ease; /* Transição suave para o hover */
+}
+
+.widget ul li a:hover {
+    color: #F4A261; /* Laranja suave ao passar o mouse */
+    text-decoration: underline; /* Sublinha o texto ao passar o mouse para indicar clicabilidade */
+}
+
+/* Conteúdo Principal */
+.main-content {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 300px; /* Largura mínima para responsividade */
+}
+
+article {
+    background-color: #FFFFFF; /* Branco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo */
+    text-align: center; /* Centraliza o texto */
+}
+
+article h2 {
+    font-size: 30px;
+    color: #424242; /* Cor do título */
+}
+
+article p {
+    margin: 10px 0;
+    color: #333; /* Cor do texto */
+    line-height: 1.6; /* Aumenta a altura da linha para melhor legibilidade */
+    font-size: 16px; /* Ajusta o tamanho da fonte para maior clareza */
+}
+
+article p:first-of-type {
+    font-weight: bold; /* Destaque para a primeira frase */
+    font-size: 18px; /* Tamanho da fonte maior para chamar a atenção */
+    color: #8A4F24; /* Cor marrom escuro */
+}
+
+article p:last-of-type {
+    font-style: italic; /* Inclina o texto para um estilo diferenciado */
+    color: #555; /* Cor cinza escuro para diferenciação */
+    font-size: 16px; /* Tamanho da fonte padrão */
+}
+
+/* Seção destacada */
+.highlight-section {
+    background-color: #F9F9F9; /* Cor de fundo suave para destacar a seção */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Texto destacado */
+.highlight-text {
+    font-size: 16px; /* Tamanho da fonte aumentado */
+    color: #8A4F24; /* Cor marrom escuro para destaque */
+    font-weight: bold; /* Negrito para mais destaque */
+    margin: 10px 0;
+    line-height: 1.6; /* Aumenta a altura da linha para melhor legibilidade */
+}
+
+/* Estilo adicional para tornar o texto mais chamativo */
+article p.highlight {
+    font-weight: bold; /* Negrito para mais destaque */
+    color: #F4A261; /* Cor laranja suave */
+    background-color: rgba(244, 162, 97, 0.1); /* Fundo laranja suave */
+    padding: 5px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Imagens no artigo */
+article img {
+    width: 80%;
+    max-width: 350px; /* Ajusta a largura máxima da imagem */
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0; /* Espaçamento superior e inferior */
+}
+
+/* Botões */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8A4F24; /* Marrom escuro */
+    color: #FFFFFF; /* Branco */
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Transição suave para o hover */
+}
+
+.button:hover {
+    background-color: #F4A261; /* Laranja suave ao passar o mouse */
+}
+
+/* Rodapé */
+.footer {
+    background-color: #F4F4F4; /* Cor neutra e sofisticada para o fundo do rodapé */
+    color: #333; /* Cor do texto no rodapé */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas para o rodapé */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Para responsividade */
+    justify-content: space-around;
+    gap: 20px; /* Espaçamento entre as seções */
+}
+
+.footer .widget {
+    flex: 1;
+    padding: 20px;
+    background-color: #FFFFFF; /* Branco para os widgets */
+    color: #333; /* Cor do texto dentro dos widgets */
+    border-radius: 8px; /* Bordas arredondadas para os widgets */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 20px; /* Espaçamento inferior entre os widgets */
+}
+
+.footer .widget h2 {
+    color: #8A4F24; /* Cor marrom escuro para títulos */
+    font-size: 22px; /* Tamanho do texto do título */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    font-weight: bold; /* Negrito para mais destaque */
+}
+
+.footer .widget p {
+    font-size: 16px; /* Tamanho da fonte do texto */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+}
+
+.highlight {
+    color: #8A4F24; /* Marrom escuro */
+    font-weight: bold;
+}
+
+/* Ajustes para responsividade */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}

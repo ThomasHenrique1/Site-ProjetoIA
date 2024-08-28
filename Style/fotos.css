@@ -1,0 +1,120 @@
+/* Estilo Geral */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #F4A261 0%, #8A4F24 100%); /* Gradiente sofisticado */
+    color: #333; /* Cor do texto */
+    padding: 0;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #8A4F24; /* Marrom escuro */
+    color: #FFFFFF; /* Branco */
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Alinha logo e título verticalmente */
+    justify-content: space-between; /* Espaçamento entre logo, título e link */
+    max-width: 1200px; /* Largura máxima para centralizar */
+    margin: 0 auto; /* Centraliza o cabeçalho */
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#logo img {
+    max-height: 50px; /* Tamanho máximo para a logo */
+}
+
+.header h1 {
+    color: #F4A261; /* Laranja suave */
+    font-size: 36px; /* Tamanho maior para o título */
+    margin: 0; /* Remove margens do título */
+}
+
+/* Link de Navegação */
+.back-link {
+    color: #fdf6f6; /* Laranja suave */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transição suave para o hover */
+}
+
+.back-link:hover {
+    color: #F4A261; /* Marrom escuro ao passar o mouse */
+}
+
+/* Galeria de Imagens */
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Para responsividade */
+    gap: 20px; /* Espaçamento entre os cards */
+    justify-content: center; /* Centraliza os cards */
+    margin: 20px auto;
+    max-width: 1200px; /* Largura máxima para o conteúdo */
+    padding: 0 15px; /* Espaçamento interno nas laterais */
+}
+
+/* Card de Imagem */
+.image-card {
+    background-color: #FFFFFF; /* Branco para o fundo do card */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Garante que as bordas arredondadas funcionem */
+    text-align: center; /* Centraliza o texto */
+    width: 250px; /* Largura fixa para os cards */
+    transition: transform 0.3s ease; /* Transição suave para o efeito de zoom */
+}
+
+.image-card:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do card ao passar o mouse */
+}
+
+.image-card img {
+    width: 100%; /* Imagem ocupa toda a largura do card */
+    height: auto;
+    border-bottom: 2px solid #8A4F24; /* Linha de destaque inferior */
+    transition: transform 0.3s ease; /* Transição suave para o efeito de zoom */
+}
+
+.image-card img:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+
+.image-card h2 {
+    font-size: 20px; /* Tamanho do título */
+    color: #8A4F24; /* Cor marrom escuro para o título */
+    margin: 10px 0; /* Espaçamento superior e inferior */
+    font-weight: bold; /* Negrito para destaque */
+}
+
+.image-card p {
+    font-size: 16px; /* Tamanho da fonte do texto */
+    color: #333; /* Cor do texto */
+    padding: 0 10px; /* Espaçamento interno nas laterais */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    font-style: italic; /* Estilo itálico para destaque */
+    background-color: rgba(244, 162, 97, 0.1); /* Fundo laranja suave */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 5px; /* Espaçamento interno */
+}
+
+/* Ajustes para responsividade */
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-card {
+        width: 100%;
+        max-width: 300px; /* Ajusta a largura máxima para telas menores */
+    }
+}
